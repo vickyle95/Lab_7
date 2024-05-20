@@ -1,0 +1,148 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    margin: 5;
+    padding: 0;
+}
+header {
+    background: #cf6c6c;
+    color: #000000;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 8mm ridge #333;
+    border-bottom: 8mm ridge #333;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+li::before{
+    content: "\2756";
+    color: rgb(119, 45, 188);
+    font-size: 1.5em;
+}
+a:hover {
+    color: rgb(254, 189, 202);
+}
+main {
+    padding: 1rem;
+    text-align: center;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+blockquote {
+    padding: 20px;
+    font-style: italic;
+    color: #093986;
+    margin: 1rem;
+    background-color: #cf6c6c;
+    border-left: 8mm ridge #333;
+    border-right: 8mm ridge #333;
+}
+.float-container img{
+    float: inline-start;
+    inline-size: 50rem;
+    border: 6px ridge #333;
+
+}
+.float-container p::first-letter{
+    font-size: 3em;
+    font-weight: inherit;
+    color: #cf6c6c;
+    font-display: block;
+    background-color: #333;
+}
+.float-container{
+    text-transform: capitalize;
+    background-color: #cf6c6c;
+}
+.overflow-container {
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    border: 2px solid #333;
+    padding: 2rem;
+    text-transform: capitalize;
+    position: relative;
+    right: -5%;
+}
+.z-index-container {
+    position: relative;
+    height: 200px;
+    margin: 1rem 0;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.box1 {
+    background: red;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.box2 {
+    background: blue;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+}
+
+.box3 {
+    background: green;
+    z-index: 3;
+    top: 40px;
+    left: 40px;
+}
+.position-relative {
+    position: relative;
+    background: #cf6c6c;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.position-absolute {
+    position: absolute;
+    bottom: -600px;
+    right: 50px;
+    background: rgb(23, 119, 151);
+    padding: 1rem;
+}
+.position-fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgb(129, 162, 246);
+    padding: 1rem;
+}
+.position-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: lightgreen;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.pseudo-element::before {
+    content: "★ ";
+    color:  gold;
+}
+.pseudo-class {
+    background: #35b9d4;
+    border: 3px solid #1a1414;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 3s linear 0s;
+}
+.pseudo-class:hover{
+    background-color: rgb(220, 103, 103);
+}
+.pseudo-class:active {
+    background: #d2d2d2;
+}
